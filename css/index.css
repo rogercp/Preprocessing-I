@@ -135,6 +135,15 @@ body {
   height: 100%;
   font-size: 62.5%;
 }
+.round-borders {
+  width: 7rem;
+  border-radius: 100%;
+  border: 1px solid black(20, 19, 19, 0.945);
+  margin-right: 1rem;
+}
+.border {
+  border: 2px solid black;
+}
 .container {
   background-image: url(../steel.jpg);
   background-repeat: no-repeat;
@@ -178,7 +187,6 @@ nav a a:hover {
 .picbox {
   display: flex;
   justify-content: space-evenly;
-  border-bottom: 1px solid black(20, 19, 19, 0.945);
   margin: 0 1rem;
 }
 .picbox img {
@@ -192,7 +200,7 @@ nav a a:hover {
 .picbox div h1 {
   font-size: 4rem;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .picbox {
     flex-direction: column;
     align-items: center;
@@ -217,7 +225,7 @@ nav a a:hover {
   border: 2px solid black;
   padding: 2rem;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .middle-content {
     flex-direction: column;
     align-items: center;

@@ -67,6 +67,15 @@ table {
 	@text-color:black(20, 19, 19, 0.945);
 	@font:'Audiowide', cursive;
 	//Mixins
+	.round-borders{
+		width:7rem;
+		border-radius: 100%;
+		border:1px solid @text-color;
+		margin-right: 1rem;
+	}
+	.border{
+		border:2px solid black;
+	}
 
 	//start of my css
 
@@ -90,10 +99,7 @@ table {
 			font-size:3rem; 
 			padding-bottom: 1rem;
 			.img1{
-				width:7rem;
-				border-radius: 100%;
-				border:1px solid @text-color;
-				margin-right: 1rem;
+				.round-borders;
 			}
 		}
 		
@@ -118,7 +124,6 @@ table {
 	.picbox{
 		display: flex;
 		justify-content: space-evenly;
-		border-bottom:1px solid @text-color;
 		margin:0 1rem;
 		
 		img{
@@ -135,7 +140,7 @@ table {
 			}
 		}
 	}
-	@media (max-width:600px) {
+	@media (max-width:500px) {
 		.picbox{
 			flex-direction: column;
 			align-items: center;
@@ -154,16 +159,16 @@ table {
 
 		.skills{
 			width: 49%;
-			border:2px solid black;
+			.border;
 			padding:2rem;
 		}
 		.ilike{
 			width: 49%;
-			border:2px solid black;
+			.border;
 			padding:2rem;
 		}
 	}
-	@media (max-width:600px) {
+	@media (max-width:500px) {
 		.middle-content{
 			flex-direction: column;
 			align-items: center;
