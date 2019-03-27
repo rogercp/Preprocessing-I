@@ -63,7 +63,7 @@ table {
 	
 
 	//Variable
-	@main-background:url(../paper.jpg);
+	@main-background:url(../.jpg);
 	//Mixins
 
 	//start of my css
@@ -73,21 +73,42 @@ table {
 		margin:0 auto;
 		max-width: 880px;
 		border: 2px black solid;
+		font-size: 2rem;
 
 	}
-	header{
+	nav{
 		display: flex;
 		justify-content: flex-end;
+		
 		a{
 			text-decoration:none;
-			color:white;
+			color:grey;
+			font-size: 1.5rem;
+			padding: 10px 2rem;
+			a:hover{
+				text-decoration: underline;
+				color:grey;	
+			}
 		}
 	}
 
 
 	.picbox{
+		display: flex;
+		justify-content: space-evenly;
+		border-bottom:1px solid black;
 		img{
-			width:200px;
+			height:300px;
+			width: 30rem;
+			padding:20px 4rem; 
+
+		}
+		div{
+			padding:20px 4rem;
+			h1{
+				font-size: 4rem;
+
+			}
 		}
 	}
 

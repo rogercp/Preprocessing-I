@@ -136,19 +136,39 @@ body {
   font-size: 62.5%;
 }
 .container {
-  background-image: url(../paper.jpg);
+  background-image: url(../.jpg);
   margin: 0 auto;
   max-width: 880px;
   border: 2px black solid;
+  font-size: 2rem;
 }
-header {
+nav {
   display: flex;
   justify-content: flex-end;
 }
-header a {
+nav a {
   text-decoration: none;
-  color: white;
+  color: grey;
+  font-size: 1.5rem;
+  padding: 10px 2rem;
+}
+nav a a:hover {
+  text-decoration: underline;
+  color: grey;
+}
+.picbox {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid black;
 }
 .picbox img {
-  width: 200px;
+  height: 300px;
+  width: 30rem;
+  padding: 20px 4rem;
+}
+.picbox div {
+  padding: 20px 4rem;
+}
+.picbox div h1 {
+  font-size: 4rem;
 }
