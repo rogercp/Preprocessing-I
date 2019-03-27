@@ -74,11 +74,10 @@ table {
 		background-repeat: no-repeat;
 		background-size: cover;
 		margin:0 auto;
-		max-width: 800px;
+		max-width: 880px;
 		border: 2px rgba(0, 0, 0, 0.24) solid;
 		font-size: 2rem;
 		margin: 10px;
-		opacity: .95;
 		color: @text-color;
 		h1{
 			font-size: 4rem;
@@ -88,7 +87,7 @@ table {
 		h2{
 			font-size:3rem; 
 			padding-bottom: 1rem;
-			img{
+			.img1{
 				width:7rem;
 				border-radius: 100%;
 				border:1px solid @text-color;
@@ -137,7 +136,12 @@ table {
 	@media (max-width:600px) {
 		.picbox{
 			flex-direction: column;
-		}
+			align-items: center;
+			img{
+				width: 70%;
+				padding: 0;
+			}
+	}
 	}
 
 	.middle-content{
@@ -147,12 +151,12 @@ table {
 		
 
 		.skills{
-			width: 44%;
+			width: 49%;
 			border:2px solid black;
 			padding:2rem;
 		}
 		.ilike{
-			width: 44%;
+			width: 49%;
 			border:2px solid black;
 			padding:2rem;
 		}
@@ -160,7 +164,18 @@ table {
 	@media (max-width:600px) {
 		.middle-content{
 			flex-direction: column;
+			align-items: center;
+			.skills{
+				width: 98%;
+				margin-bottom:2rem;
+			}
+			.ilike{
+				width: 98%;
+				margin-top: 2rem;
+			
+			}
 		}
+		
 	}
 
 
