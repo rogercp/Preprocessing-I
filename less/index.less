@@ -63,8 +63,8 @@ table {
 	
 
 	//Variable
-	@main-background:url(../key.jpg);
-	@text-color:rgba(255, 255, 255, 0.678);
+	@main-background:url(../grey.jpg);
+	@text-color:black(20, 19, 19, 0.945);
 	//Mixins
 
 	//start of my css
@@ -103,12 +103,12 @@ table {
 		justify-content: flex-end;
 		a{
 			text-decoration:none;
-			color:grey;
+			color:white ;
 			font-size: 1.5rem;
 			padding: 10px 2rem;
 			a:hover{
 				text-decoration: underline;
-				color:grey;	
+				color:rgb(41, 37, 37);	
 			}
 		}
 	}
@@ -119,10 +119,16 @@ table {
 		justify-content: space-evenly;
 		border-bottom:1px solid @text-color;
 		margin:0 1rem;
+		@media (max-width:500px) {
+			.picbox{
+				flex-direction: column;
+			}
+			
+		}
 		
 		
 		img{
-			height:300px;
+			height:30rem;
 			width: 30rem;
 			padding:20px 4rem; 
 
