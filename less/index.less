@@ -63,7 +63,7 @@ table {
 	
 
 	//Variable
-	@main-background:url(../.jpg);
+	@main-background:url(../paper.jpg);
 	//Mixins
 
 	//start of my css
@@ -71,15 +71,16 @@ table {
 	.container{
 		background-image: @main-background;
 		margin:0 auto;
-		max-width: 880px;
-		border: 2px black solid;
+		max-width: 800px;
+		border: 2px rgba(0, 0, 0, 0.24) solid;
 		font-size: 2rem;
+		margin: 10px;
+		opacity: .95;
 
 	}
 	nav{
 		display: flex;
 		justify-content: flex-end;
-		
 		a{
 			text-decoration:none;
 			color:grey;
@@ -97,6 +98,10 @@ table {
 		display: flex;
 		justify-content: space-evenly;
 		border-bottom:1px solid black;
+		background-color: rgba(224, 206, 206, 0.712);
+		margin:0 1rem;
+		
+		
 		img{
 			height:300px;
 			width: 30rem;
@@ -112,3 +117,22 @@ table {
 		}
 	}
 
+	.middle-content{
+		display: flex;
+		justify-content:space-evenly;
+		padding: 30px;
+		.skills{
+			width: 44%;
+		}
+		.ilike{
+			width: 44%;
+			text-align: center;
+		}
+	}
+
+	.education{
+		padding: 20px 2rem;
+	}
+	footer{
+		text-align: center;
+	}
