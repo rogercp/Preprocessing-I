@@ -55,4 +55,39 @@ table {
 
 	html, body {
 		height: 100%;
+		font-size: 62.5%;
+	
 	}
+
+
+	
+
+	//Variable
+	@main-background:url(../paper.jpg);
+	//Mixins
+
+	//start of my css
+
+	.container{
+		background-image: @main-background;
+		margin:0 auto;
+		max-width: 880px;
+		border: 2px black solid;
+
+	}
+	header{
+		display: flex;
+		justify-content: flex-end;
+		a{
+			text-decoration:none;
+			color:white;
+		}
+	}
+
+
+	.picbox{
+		img{
+			width:200px;
+		}
+	}
+

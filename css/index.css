@@ -133,4 +133,22 @@ table {
 html,
 body {
   height: 100%;
+  font-size: 62.5%;
+}
+.container {
+  background-image: url(../paper.jpg);
+  margin: 0 auto;
+  max-width: 880px;
+  border: 2px black solid;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+}
+header a {
+  text-decoration: none;
+  color: white;
+}
+.picbox img {
+  width: 200px;
 }
