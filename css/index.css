@@ -181,14 +181,9 @@ nav a a:hover {
   border-bottom: 1px solid black(20, 19, 19, 0.945);
   margin: 0 1rem;
 }
-@media (max-width: 500px) {
-  .picbox .picbox {
-    flex-direction: column;
-  }
-}
 .picbox img {
-  height: 30rem;
-  width: 30rem;
+  height: 30%;
+  width: 30%;
   padding: 20px 4rem;
 }
 .picbox div {
@@ -197,6 +192,11 @@ nav a a:hover {
 .picbox div h1 {
   font-size: 4rem;
 }
+@media (max-width: 600px) {
+  .picbox {
+    flex-direction: column;
+  }
+}
 .middle-content {
   display: flex;
   justify-content: space-evenly;
@@ -204,13 +204,18 @@ nav a a:hover {
 }
 .middle-content .skills {
   width: 44%;
-  border: 1px solid black(20, 19, 19, 0.945);
+  border: 2px solid black;
   padding: 2rem;
 }
 .middle-content .ilike {
   width: 44%;
-  border: 1px solid black(20, 19, 19, 0.945);
+  border: 2px solid black;
   padding: 2rem;
+}
+@media (max-width: 600px) {
+  .middle-content {
+    flex-direction: column;
+  }
 }
 .education {
   padding: 20px 2rem;
