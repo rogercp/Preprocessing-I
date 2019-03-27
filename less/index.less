@@ -63,8 +63,9 @@ table {
 	
 
 	//Variable
-	@main-background:url(../grey.jpg);
+	@main-background:url(../steel.jpg);
 	@text-color:black(20, 19, 19, 0.945);
+	@font:'Audiowide', cursive;
 	//Mixins
 
 	//start of my css
@@ -73,10 +74,11 @@ table {
 		background-image: @main-background;
 		background-repeat: no-repeat;
 		background-size: cover;
-		margin:0 auto;
+		margin:auto;
 		max-width: 880px;
 		border: 2px rgba(0, 0, 0, 0.24) solid;
 		font-size: 2rem;
+		font-family: @font;
 		margin: 10px;
 		color: @text-color;
 		h1{
@@ -186,4 +188,5 @@ table {
 	footer{
 		text-align: center;
 		padding-bottom: 1rem;
+		font-size:1rem;
 	}
